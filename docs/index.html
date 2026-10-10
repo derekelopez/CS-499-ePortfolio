@@ -12,7 +12,7 @@
     <title>Derek Lopez | Computer Science ePortfolio</title>
 
     <style>
-        :root (
+        :root {
             color-scheme: light;
             --navy: #15243b;
             --blue: #155e92;
@@ -20,7 +20,7 @@
             --muted: #526175;
             --line:#dbe3eb;
             --paper: #f5f8fb;
-            --white: #fffffff;
+            --white: #ffffff;
         }
 
         *{
@@ -35,13 +35,13 @@
             margin: 0;
             color: var(--ink);
             background: var(--paper);
-            font: 16px/1.7 system-ui, -apple-sysstem,
-                BlinkMacSystemFont, "Segoe UI, sans-serif;
+            font: 16px/1.7 system-ui, -apple-system,
+                BlinkMacSystemFont, "Segoe UI", sans-serif;
         }
 
         a {
             color: var(--blue);
-            test-underline-offset: 3px;
+            text-underline-offset: 3px;
         }
 
         a:focus-visible {
@@ -106,7 +106,7 @@
             border-radius: 14px;
             padding: clamp(22px, 4vw, 38px);
             margin: 0 0 23px;
-            box-shadow: 0 4px rgba(18, 38, 65, .035);
+            box-shadow: 0 4px 18px rgba(18, 38, 65, .035);
         }
 
         h2 {
@@ -229,7 +229,7 @@
             <p>
                 Building reliable software through modular engineering, 
                 informed algorithms, embedded systems, and data-driven
-                design. this portfolio documents my CS 499 capstone
+                design. This portfolio documents my CS 499 capstone
                 enhancements and the technical decisions, implementation
                 work, and evaluation behind them.
             </p>
@@ -264,7 +264,7 @@
             <p>
                 I am completing a Bachelor of Science in Computer Science
                 with a concentration in Software Engineering at Southern
-                New Hampshire University, with anticipated graduacion
+                New Hampshire University, with anticipated graduation
                 in November 2026. My interests include software 
                 architecture, embedded and Internet of Things (IoT)
                 systems, algorithm development, backend services,
@@ -272,7 +272,7 @@
             </p>
 
             <p>
-                My tehcnical coursework includes Python, Java, C++,
+                My technical coursework includes Python, Java, C++,
                 Android development, full-stack web development, 
                 and machine learning. My professional experience in
                 ergonomics and process improvement has also strengthened
@@ -308,7 +308,7 @@
                 interaction, telemetry communication, and the main
                 application. This makes the application easier to 
                 understand, maintain, extend, and troubleshoot than
-                a single tighly coupled implementation.
+                a single tightly coupled implementation.
             </p>
 
             <h3>Implemented enhancements</h3>
@@ -323,13 +323,13 @@
                 <li>
                     Separated thermostat decision-making from Raspberry
                     Pi hardware access using
-                    <code>thermostat-core.py</code>,
+                    <code>thermostat_core.py</code>,
                     <code>hardware_pi.py</code>, and
                     <code>main.py</code>.
                 </li>
 
                 <li>
-                    Addes <code>telemetry_client.py</code> to transmit
+                    Added <code>telemetry_client.py</code> to transmit
                     device readings to the backend used in 
                     Enhancement Three.
                 </li>
@@ -341,7 +341,7 @@
                 </li>
             </ul>
 
-            <div class="taglist>
+            <div class="taglist">
                 <span class="tag">Python</span>
                 <span class="tag">Raspberry Pi</span>
                 <span class="tag">Modular Design</span>
@@ -432,7 +432,7 @@
 
             <p>
                 <strong>Results:</strong>
-                A* sovled all 50 tested starts without a training phase.
+                A* solved all 50 tested starts without a training phase.
                 The DQN model, trained for 1000 epochs in this
                 experiment, succeeded on only one start. The successful
                 DQN path took one move; because it was the sole success,
@@ -446,13 +446,13 @@
                 <span class="tag">Python</span>
                 <span class="tag">A* Search</span>
                 <span class="tag">Priority Queue</span>
-                <span class+"tag">DQN</span>
+                <span class="tag">DQN</span>
                 <span class="tag">Benchmarking</span>
             </div>
 
             <p>
                 <strong>Skills demonstrated:</strong>
-                algorithm selection, data structures, huristic search,
+                algorithm selection, data structures, heuristic search,
                 complexity analysis, test design, and evidence-based
                 comparison.
             </p>
@@ -469,12 +469,12 @@
             <h2>Databases</h2>
 
             <p class="subtitle">
-                Smart THermostat IoT Telemetry |
-                Flask RESTT API and MongoDB
+                Smart Thermostat IoT Telemetry |
+                Flask REST API and MongoDB
             </p>
 
             <p>
-                I extended the enhacement thermostat into a working
+                I extended the enhancement thermostat into a working
                 IoT telemetry system. The Raspberry Pi sends
                 timestamped temperature, humidity, setpoint, and
                 operating-state readings to a Python Flask API.
@@ -506,7 +506,7 @@
 
                 <li>
                     Integrated live readings from the Raspberry Pi
-                    and confirmed the resulting records in MongoDB
+                    and confirmed the resulting records in MongoDB.
                 </li>
 
                 <li>
@@ -540,7 +540,7 @@
 
             <div class="taglist">
                 <span class="tag">Flask</span>
-                <span class="tag">Rest API</span>
+                <span class="tag">REST API</span>
                 <span class="tag">MongoDB</span>
                 <span class="tag">Validation</span>
                 <span class="tag">Data Analytics</span>
@@ -559,13 +559,13 @@
 
         <!-- PROFESSIONAL REFLECTION -->
 
-        <section id+"reflection">
+        <section id="reflection">
 
             <h2>Professional Reflection</h2>
 
             <p>
                 My capstone work demonstrates growth from implementing
-                individual course requriements to designing and
+                individual course requirements to designing and
                 evaluating connected software systems. In the
                 thermostat project, I applied modular architecture
                 to improve maintainability and ease future enhancements.
@@ -582,7 +582,7 @@
                 to troubleshoot, document architectural choices,
                 validate inputs, interpret experimental results,
                 and communicate technical outcomes. My next goals
-                are to expand autmated tests, improve deployment
+                are to expand automated tests, improve deployment
                 security, and continue developing dependable
                 software for real-world applications.
             </p>
@@ -597,7 +597,7 @@
             <h2>Artifacts and Supporting Evidence</h2>
 
             <p>
-                "TO DO" Place holder for artifacts, coder review, etc.
+                "TODO" Placeholder for artifacts, code review, etc.
             </p>
 
             <ul>
