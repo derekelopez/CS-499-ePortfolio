@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Derek Lopez's Computer Science ePortfolio featuring engineering, algorithms,
-        embedded systems, and database enhancements.">
-    
+        content="Derek Lopez's Computer Science ePortfolio featuring engineering, algorithms, embedded systems, and database enhancements.">
+
     <title>Derek Lopez | Computer Science ePortfolio</title>
 
     <style>
@@ -18,12 +18,12 @@
             --blue: #155e92;
             --ink: #243247;
             --muted: #526175;
-            --line:#dbe3eb;
+            --line: #dbe3eb;
             --paper: #f5f8fb;
             --white: #ffffff;
         }
 
-        *{
+        * {
             box-sizing: border-box;
         }
 
@@ -54,6 +54,8 @@
             margin: auto;
         }
 
+        /* HEADER */
+
         header {
             background: linear-gradient(120deg, #15243b, #214b71);
             color: white;
@@ -78,23 +80,40 @@
             color: #f0f5fa;
         }
 
+        /* NAVIGATION */
+
+        nav {
+            background: var(--navy);
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
         nav .wrap {
             display: flex;
             flex-wrap: wrap;
+            align-items: center;
             gap: 5px 24px;
             padding: 12px 0;
         }
 
         nav a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             font-weight: 600;
             font-size: .94rem;
+            padding: 7px 0;
         }
 
         nav a:hover {
+            color: #9bdcff;
             text-decoration: underline;
         }
+
+        nav a:focus-visible {
+            outline: 3px solid #f0ae4e;
+            outline-offset: 4px;
+        }
+
+        /* MAIN CONTENT */
 
         main {
             padding: 34px 0 55px;
@@ -148,6 +167,8 @@
             margin-top: -7px;
         }
 
+        /* BENCHMARK STATISTICS */
+
         .stats {
             display: grid;
             grid-template-columns:
@@ -175,6 +196,8 @@
             color: #42566a;
         }
 
+        /* NOTES */
+
         .note {
             background: #f1f5f9;
             padding: 14px 17px;
@@ -182,6 +205,8 @@
             color: #45566c;
             font-size: .93rem;
         }
+
+        /* TECHNOLOGY TAGS */
 
         .taglist {
             display: flex;
@@ -199,6 +224,35 @@
             font-weight: 600;
         }
 
+        /* BACK TO TOP BUTTON */
+
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: var(--blue);
+            color: #ffffff;
+            padding: 12px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background: var(--navy);
+            color: #ffffff;
+        }
+
+        .back-to-top:focus-visible {
+            outline: 3px solid #f0ae4e;
+            outline-offset: 3px;
+        }
+
+        /* FOOTER */
+
         footer {
             background: var(--navy);
             color: #dce8f3;
@@ -207,15 +261,36 @@
             font-size: .9rem;
         }
 
+        /* ACCESSIBILITY */
+
         @media (prefers-reduced-motion: reduce) {
             html {
                 scroll-behavior: auto;
             }
         }
+
+        /* MOBILE LAYOUT */
+
+        @media (max-width: 600px) {
+            nav .wrap {
+                gap: 6px 16px;
+            }
+
+            nav a {
+                font-size: .88rem;
+            }
+
+            .back-to-top {
+                bottom: 15px;
+                right: 15px;
+                padding: 10px 14px;
+                font-size: .82rem;
+            }
+        }
     </style>
 </head>
 
-<body>
+<body id="top">
 
     <!-- HEADER -->
 
@@ -227,13 +302,13 @@
             <h2>Computer Science ePortfolio</h2>
 
             <p>
-                Building reliable software through modular engineering, 
+                Building reliable software through modular engineering,
                 informed algorithms, embedded systems, and data-driven
                 design. This portfolio documents my CS 499 capstone
                 enhancements and the technical decisions, implementation
                 work, and evaluation behind them.
             </p>
-            
+
         </div>
     </header>
 
@@ -242,14 +317,20 @@
 
     <nav aria-label="Main navigation">
         <div class="wrap">
+
             <a href="#about">About</a>
+
             <a href="#engineering">Software Engineering</a>
+
             <a href="#algorithms">Algorithms</a>
+
             <a href="#databases">Databases</a>
+
             <a href="#reflection">Professional Reflection</a>
+
             <a href="#artifacts">Artifacts</a>
+
         </div>
-        
     </nav>
 
 
@@ -265,7 +346,7 @@
                 I am completing a Bachelor of Science in Computer Science
                 with a concentration in Software Engineering at Southern
                 New Hampshire University, with anticipated graduation
-                in November 2026. My interests include software 
+                in November 2026. My interests include software
                 architecture, embedded and Internet of Things (IoT)
                 systems, algorithm development, backend services,
                 database systems, and secure programming.
@@ -273,7 +354,7 @@
 
             <p>
                 My technical coursework includes Python, Java, C++,
-                Android development, full-stack web development, 
+                Android development, full-stack web development,
                 and machine learning. My professional experience in
                 ergonomics and process improvement has also strengthened
                 my analytical thinking, troubleshooting, communication,
@@ -285,11 +366,11 @@
                 transformed course projects into more maintainable,
                 measurable, and integrated systems.
             </p>
-            
+
         </section>
 
 
-        <!-- ENHANCEMENTS ONE -->
+        <!-- ENHANCEMENT ONE -->
 
         <section id="engineering">
 
@@ -298,24 +379,25 @@
             <h2>Software Design and Engineering</h2>
 
             <p class="subtitle">
-                Smart Thermostat | Raspberry Pi and Python                
+                Smart Thermostat | Raspberry Pi and Python
             </p>
 
             <p>
-                I enhanced my original Raspberry Pi thermostat by 
+                I enhanced my original Raspberry Pi thermostat by
                 reorganizing its functionality into separate modules
                 for configuration, thermostat control, hardware
                 interaction, telemetry communication, and the main
-                application. This makes the application easier to 
+                application. This makes the application easier to
                 understand, maintain, extend, and troubleshoot than
                 a single tightly coupled implementation.
             </p>
 
-            <h3>Implemented enhancements</h3>
+            <h3>Implemented Enhancements</h3>
 
             <ul>
                 <li>
-                    Preserved the <strong>OFF &rarr; HEAT &rarr; COOL</strong>
+                    Preserved the
+                    <strong>OFF &rarr; HEAT &rarr; COOL</strong>
                     operating-state cycle and button-based
                     setpoint adjustments.
                 </li>
@@ -330,7 +412,7 @@
 
                 <li>
                     Added <code>telemetry_client.py</code> to transmit
-                    device readings to the backend used in 
+                    device readings to the backend used in
                     Enhancement Three.
                 </li>
 
@@ -355,6 +437,7 @@
                 configuration management, hardware/software integration,
                 debugging, and system verification.
             </p>
+
         </section>
 
 
@@ -367,7 +450,7 @@
             <h2>Algorithms and Data Structures</h2>
 
             <p class="subtitle">
-                Pirate Intelligent Agent | 
+                Pirate Intelligent Agent |
                 A* Search and Deep Q-Learning
             </p>
 
@@ -396,7 +479,7 @@
                 </li>
 
                 <li>
-                    Collected comparable outcome measures, including 
+                    Collected comparable outcome measures, including
                     completion rates and path lengths.
                 </li>
 
@@ -427,7 +510,7 @@
                     <strong>8 x 8</strong>
                     <span>Evaluation maze</span>
                 </div>
-                
+
             </div>
 
             <p>
@@ -436,7 +519,7 @@
                 The DQN model, trained for 1000 epochs in this
                 experiment, succeeded on only one start. The successful
                 DQN path took one move; because it was the sole success,
-                that path length is not directly comparable to the 
+                that path length is not directly comparable to the
                 A* average. These results show that A* was more reliable
                 <em>under the tested conditions</em>, not that A*
                 universally outperforms reinforcement learning.
@@ -456,11 +539,11 @@
                 complexity analysis, test design, and evidence-based
                 comparison.
             </p>
-            
+
         </section>
 
 
-        <!-- ENHANCEMENT THREE-->
+        <!-- ENHANCEMENT THREE -->
 
         <section id="databases">
 
@@ -474,7 +557,7 @@
             </p>
 
             <p>
-                I extended the enhancement thermostat into a working
+                I extended the enhanced thermostat into a working
                 IoT telemetry system. The Raspberry Pi sends
                 timestamped temperature, humidity, setpoint, and
                 operating-state readings to a Python Flask API.
@@ -483,10 +566,9 @@
                 for querying and summary statistics.
             </p>
 
-            <h3>Implemented enhancements</h3>
+            <h3>Implemented Enhancements</h3>
 
             <ul>
-
                 <li>
                     Created a Flask backend with a
                     <code>/api/health</code> endpoint and a
@@ -535,7 +617,8 @@
                 Input validation is implemented, but this
                 project should not be presented as production-secure.
                 Authentication, encrypted transport, access controls,
-                and production deployment hardening remain possible future improvements.
+                and production deployment hardening remain possible
+                future improvements.
             </p>
 
             <div class="taglist">
@@ -553,7 +636,7 @@
                 integration testing, database querying, and
                 measurement-based reporting.
             </p>
-            
+
         </section>
 
 
@@ -586,50 +669,50 @@
                 security, and continue developing dependable
                 software for real-world applications.
             </p>
-            
+
         </section>
 
 
-        <!-- ARTIFACTS -->
+        <!-- ARTIFACTS AND SUPPORTING EVIDENCE -->
 
         <section id="artifacts">
 
             <h2>Artifacts and Supporting Evidence</h2>
 
             <p>
-                "TODO" Placeholder for artifacts, code review, etc.
+                Supporting source code, technical narratives, benchmark
+                results, and demonstrations will be linked here.
             </p>
 
             <ul>
-
                 <li>
                     <strong>Code Review:</strong>
-                    "TODO" overview of the original artifacts and
-                    the proposed improvements.
+                    TODO - Add original artifact review and
+                    proposed enhancement documentation.
                 </li>
 
                 <li>
                     <strong>Enhancement One:</strong>
-                    "TODO" thermostat source files, architecture narrative,
-                    and physical hardware demonstration, etc.
+                    TODO - Add thermostat source code,
+                    architecture narrative, and hardware demonstration.
                 </li>
 
                 <li>
                     <strong>Enhancement Two:</strong>
-                    "TODO" A* implementation, enhanced notebook,
-                    comparison results, algorithm narrative, etc.
+                    TODO - Add A* implementation, enhanced notebook,
+                    benchmark results, and algorithm narrative.
                 </li>
-
 
                 <li>
                     <strong>Enhancement Three:</strong>
-                    "TODO" Flask, MongoDB source files, sample API responses,
-                    database narrative, and system demonstration, etc.
+                    TODO - Add Flask and MongoDB source files,
+                    sample API responses, database narrative,
+                    and system demonstration.
                 </li>
             </ul>
-            
+
         </section>
-        
+
     </main>
 
 
@@ -640,61 +723,14 @@
             &copy; 2026 Derek Lopez &middot; Computer Science ePortfolio
         </div>
     </footer>
+
+
+    <!-- BACK TO TOP BUTTON -->
+
+    <a href="#top" class="back-to-top" aria-label="Back to top of page">
+        &uarr; Back to Top
+    </a>
+
 </body>
+
 </html>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-        
