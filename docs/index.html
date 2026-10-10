@@ -4,77 +4,697 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Derek Lopez's Computer Science ePortfolio featuring engineering, algorithms,
+        embedded systems, and database enhancements.">
+    
     <title>Derek Lopez | Computer Science ePortfolio</title>
+
+    <style>
+        :root (
+            color-scheme: light;
+            --navy: #15243b;
+            --blue: #155e92;
+            --ink: #243247;
+            --muted: #526175;
+            --line:#dbe3eb;
+            --paper: #f5f8fb;
+            --white: #fffffff;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            background: var(--paper);
+            font: 16px/1.7 system-ui, -apple-sysstem,
+                BlinkMacSystemFont, "Segoe UI, sans-serif;
+        }
+
+        a {
+            color: var(--blue);
+            test-underline-offset: 3px;
+        }
+
+        a:focus-visible {
+            outline: 3px solid #f0ae4e;
+            outline-offset: 3px;
+        }
+
+        .wrap {
+            width: min(1080px, calc(100% - 40px));
+            margin: auto;
+        }
+
+        header {
+            background: linear-gradient(120deg, #15243b, #214b71);
+            color: white;
+            padding: 66px 0 54px;
+        }
+
+        header h1 {
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            margin: 0 0 3px;
+            line-height: 1.15;
+        }
+
+        header h2 {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            font-weight: 500;
+            color: #cbe1f2;
+            margin: 4px 0 20px;
+        }
+
+        header p {
+            max-width: 750px;
+            color: #f0f5fa;
+        }
+
+        nav .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px 24px;
+            padding: 12px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: .94rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 34px 0 55px;
+        }
+
+        section {
+            background: var(--white);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: clamp(22px, 4vw, 38px);
+            margin: 0 0 23px;
+            box-shadow: 0 4px rgba(18, 38, 65, .035);
+        }
+
+        h2 {
+            margin: 0 0 14px;
+            font-size: 1.65rem;
+            color: var(--navy);
+            line-height: 1.3;
+        }
+
+        h3 {
+            margin: 22px 0 7px;
+            font-size: 1.05rem;
+            color: var(--navy);
+        }
+
+        p {
+            margin: 0 0 13px;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin: 8px 0 13px;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: .09em;
+            font-weight: 700;
+            font-size: .8rem;
+            color: var(--blue);
+        }
+
+        .subtitle {
+            color: var(--muted);
+            margin-top: -7px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(185px, 1fr));
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .stat {
+            background: #eef5fa;
+            border-left: 4px solid #2678a8;
+            border-radius: 8px;
+            padding: 14px 16px;
+        }
+
+        .stat strong {
+            display: block;
+            font-size: 1.55rem;
+            line-height: 1.3;
+            color: #123c5b;
+        }
+
+        .stat span {
+            font-size: .88rem;
+            color: #42566a;
+        }
+
+        .note {
+            background: #f1f5f9;
+            padding: 14px 17px;
+            border-radius: 8px;
+            color: #45566c;
+            font-size: .93rem;
+        }
+
+        .taglist {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin: 15px 0;
+        }
+
+        .tag {
+            padding: 4px 10px;
+            background: #e9f0f7;
+            border-radius: 20px;
+            color: #284d6c;
+            font-size: .82rem;
+            font-weight: 600;
+        }
+
+        footer {
+            background: var(--navy);
+            color: #dce8f3;
+            padding: 22px;
+            text-align: center;
+            font-size: .9rem;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Derek Lopez</h1>
-        <h2>Computer Science ePortfolio</h2>
+    <!-- HEADER -->
 
-        <p>
-            Welcome to my Computer Science ePortfolio. This portfolio
-            demonstrates my skills in software engineering and design,
-            algorithms and data structures, databases, and secure coding.
-        </p>
+    <header>
+        <div class="wrap">
+
+            <h1>Derek Lopez</h1>
+
+            <h2>Computer Science ePortfolio</h2>
+
+            <p>
+                Building reliable software through modular engineering, 
+                informed algorithms, embedded systems, and data-driven
+                design. this portfolio documents my CS 499 capstone
+                enhancements and the technical decisions, implementation
+                work, and evaluation behind them.
+            </p>
+            
+        </div>
     </header>
 
-    <hr>
 
-    <main>
+    <!-- NAVIGATION -->
 
-        <section>
+    <nav aria-label="Main navigation">
+        <div class="wrap">
+            <a href="#about">About</a>
+            <a href="#engineering">Software Engineering</a>
+            <a href="#algorithms">Algorithms</a>
+            <a href="#databases">Databases</a>
+            <a href="#reflection">Professional Reflection</a>
+            <a href="#artifacts">Artifacts</a>
+        </div>
+        
+    </nav>
+
+
+    <main class="wrap">
+
+        <!-- ABOUT ME -->
+
+        <section id="about">
+
             <h2>About Me</h2>
 
             <p>
-                I am completing my Bachelor of Science in Computer Science
-                with a focus on software engineering and an interest in
-                embedded systems, intelligent systems, and secure software
-                development.
+                I am completing a Bachelor of Science in Computer Science
+                with a concentration in Software Engineering at Southern
+                New Hampshire University, with anticipated graduacion
+                in November 2026. My interests include software 
+                architecture, embedded and Internet of Things (IoT)
+                systems, algorithm development, backend services,
+                database systems, and secure programming.
             </p>
-        </section>
-
-        <section>
-            <h2>Software Engineering and Design</h2>
 
             <p>
-                This section will showcase enhancements to my CS 350
-                Raspberry Pi thermostat project, including improved
-                software architecture, modular design, testing, reliability,
-                and secure coding practices.
+                My tehcnical coursework includes Python, Java, C++,
+                Android development, full-stack web development, 
+                and machine learning. My professional experience in
+                ergonomics and process improvement has also strengthened
+                my analytical thinking, troubleshooting, communication,
+                and focus on practical solutions.
+            </p>
+
+            <p>
+                The three CS 499 enhancements below demonstrate how I
+                transformed course projects into more maintainable,
+                measurable, and integrated systems.
+            </p>
+            
+        </section>
+
+
+        <!-- ENHANCEMENTS ONE -->
+
+        <section id="engineering">
+
+            <p class="eyebrow">Enhancement One</p>
+
+            <h2>Software Design and Engineering</h2>
+
+            <p class="subtitle">
+                Smart Thermostat | Raspberry Pi and Python                
+            </p>
+
+            <p>
+                I enhanced my original Raspberry Pi thermostat by 
+                reorganizing its functionality into separate modules
+                for configuration, thermostat control, hardware
+                interaction, telemetry communication, and the main
+                application. This makes the application easier to 
+                understand, maintain, extend, and troubleshoot than
+                a single tighly coupled implementation.
+            </p>
+
+            <h3>Implemented enhancements</h3>
+
+            <ul>
+                <li>
+                    Preserved the <strong>OFF &rarr; HEAT &rarr; COOL</strong>
+                    operating-state cycle and button-based
+                    setpoint adjustments.
+                </li>
+
+                <li>
+                    Separated thermostat decision-making from Raspberry
+                    Pi hardware access using
+                    <code>thermostat-core.py</code>,
+                    <code>hardware_pi.py</code>, and
+                    <code>main.py</code>.
+                </li>
+
+                <li>
+                    Addes <code>telemetry_client.py</code> to transmit
+                    device readings to the backend used in 
+                    Enhancement Three.
+                </li>
+
+                <li>
+                    Verified operation on physical Raspberry Pi hardware,
+                    including state changes, setpoint controls,
+                    LCD output, and successful telemetry transmission.
+                </li>
+            </ul>
+
+            <div class="taglist>
+                <span class="tag">Python</span>
+                <span class="tag">Raspberry Pi</span>
+                <span class="tag">Modular Design</span>
+                <span class="tag">GPIO / I2C</span>
+                <span class="tag">HTTP Telemetry</span>
+            </div>
+
+            <p>
+                <strong>Skills demonstrated:</strong>
+                modular software architecture, interface separation,
+                configuration management, hardware/software integration,
+                debugging, and system verification.
             </p>
         </section>
 
-        <section>
+
+        <!-- ENHANCEMENT TWO -->
+
+        <section id="algorithms">
+
+            <p class="eyebrow">Enhancement Two</p>
+
             <h2>Algorithms and Data Structures</h2>
 
-            <p>
-                This section will showcase enhancements to my CS 370
-                intelligent agent project, including implementation of
-                the A* pathfinding algorithm and comparison with deep
-                Q-learning.
+            <p class="subtitle">
+                Pirate Intelligent Agent | 
+                A* Search and Deep Q-Learning
             </p>
+
+            <p>
+                I improved the original treasure-hunt intelligent
+                agent by correcting environment and reward-handling
+                behavior, validating maze inputs, and implementing
+                A* pathfinding as a deterministic comparison to the
+                existing deep Q-learning (DQN) approach. I then
+                evaluated both methods using the same 8 x 8 maze
+                and 50 valid starting positions.
+            </p>
+
+            <h3>Implemented Enhancements</h3>
+
+            <ul>
+                <li>
+                    Added an A* search implementation that uses a
+                    Manhattan-distance heuristic, a priority queue
+                    (<code>heapq</code>), and cost and parent tracking.
+                </li>
+
+                <li>
+                    Improved maze-state validation and handling of
+                    invalid or previously visited moves.
+                </li>
+
+                <li>
+                    Collected comparable outcome measures, including 
+                    completion rates and path lengths.
+                </li>
+
+                <li>
+                    Saved the evaluated DQN model as
+                    <code>dqn_pirate_agent_1000.keras</code>.
+                </li>
+            </ul>
+
+            <div class="stats" aria-label="Benchmark results">
+
+                <div class="stat">
+                    <strong>50 / 50</strong>
+                    <span>A* starts solved (100%)</span>
+                </div>
+
+                <div class="stat">
+                    <strong>15.64</strong>
+                    <span>A* average path length, moves</span>
+                </div>
+
+                <div class="stat">
+                    <strong>1 / 50</strong>
+                    <span>DQN starts solved (2%)</span>
+                </div>
+
+                <div class="stat">
+                    <strong>8 x 8</strong>
+                    <span>Evaluation maze</span>
+                </div>
+                
+            </div>
+
+            <p>
+                <strong>Results:</strong>
+                A* sovled all 50 tested starts without a training phase.
+                The DQN model, trained for 1000 epochs in this
+                experiment, succeeded on only one start. The successful
+                DQN path took one move; because it was the sole success,
+                that path length is not directly comparable to the 
+                A* average. These results show that A* was more reliable
+                <em>under the tested conditions</em>, not that A*
+                universally outperforms reinforcement learning.
+            </p>
+
+            <div class="taglist">
+                <span class="tag">Python</span>
+                <span class="tag">A* Search</span>
+                <span class="tag">Priority Queue</span>
+                <span class+"tag">DQN</span>
+                <span class="tag">Benchmarking</span>
+            </div>
+
+            <p>
+                <strong>Skills demonstrated:</strong>
+                algorithm selection, data structures, huristic search,
+                complexity analysis, test design, and evidence-based
+                comparison.
+            </p>
+            
         </section>
 
-        <section>
+
+        <!-- ENHANCEMENT THREE-->
+
+        <section id="databases">
+
+            <p class="eyebrow">Enhancement Three</p>
+
             <h2>Databases</h2>
 
-            <p>
-                This section will showcase the expansion of the thermostat
-                application into an IoT data system using persistent
-                database storage, historical data analysis, and reporting.
+            <p class="subtitle">
+                Smart THermostat IoT Telemetry |
+                Flask RESTT API and MongoDB
             </p>
+
+            <p>
+                I extended the enhacement thermostat into a working
+                IoT telemetry system. The Raspberry Pi sends
+                timestamped temperature, humidity, setpoint, and
+                operating-state readings to a Python Flask API.
+                The server validates incoming records and persists
+                them in MongoDB, making historical data available
+                for querying and summary statistics.
+            </p>
+
+            <h3>Implemented enhancements</h3>
+
+            <ul>
+
+                <li>
+                    Created a Flask backend with a
+                    <code>/api/health</code> endpoint and a
+                    <code>POST /api/readings</code> ingestion endpoint.
+                </li>
+
+                <li>
+                    Added input checks for required fields, accepted
+                    thermostat states, numeric measurements, and
+                    timestamp formatting.
+                </li>
+
+                <li>
+                    Implemented MongoDB connectivity and insertion
+                    of validated telemetry documents.
+                </li>
+
+                <li>
+                    Integrated live readings from the Raspberry Pi
+                    and confirmed the resulting records in MongoDB
+                </li>
+
+                <li>
+                    Implemented a statistics query endpoint,
+                    <code>GET /api/readings/statistics</code>,
+                    with optional time-range filtering and metrics
+                    for temperature, humidity, state counts,
+                    and state durations.
+                </li>
+
+                <li>
+                    Verified endpoint behavior through HTTP requests
+                    and inspected stored records using MongoDB Compass.
+                </li>
+            </ul>
+
+            <p>
+                <strong>Example verified output:</strong>
+                A six-reading query returned an average temperature
+                of 82.91&deg;F, average humidity of 40.94%, and
+                operating-state counts for the selected interval.
+            </p>
+
+            <p class="note">
+                <strong>Security and deployment note:</strong>
+                Input validation is implemented, but this
+                project should not be presented as production-secure.
+                Authentication, encrypted transport, access controls,
+                and production deployment hardening remain possible future improvements.
+            </p>
+
+            <div class="taglist">
+                <span class="tag">Flask</span>
+                <span class="tag">Rest API</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Validation</span>
+                <span class="tag">Data Analytics</span>
+                <span class="tag">IoT</span>
+            </div>
+
+            <p>
+                <strong>Skills demonstrated:</strong>
+                API development, persistence, data validation,
+                integration testing, database querying, and
+                measurement-based reporting.
+            </p>
+            
         </section>
 
+
+        <!-- PROFESSIONAL REFLECTION -->
+
+        <section id+"reflection">
+
+            <h2>Professional Reflection</h2>
+
+            <p>
+                My capstone work demonstrates growth from implementing
+                individual course requriements to designing and
+                evaluating connected software systems. In the
+                thermostat project, I applied modular architecture
+                to improve maintainability and ease future enhancements.
+                In the intelligent agent project, I learned to
+                question algorithm performance using repeatable
+                benchmarks rather than assumptions. In the database
+                project, I connected a physical computing device
+                to an API and persistent database to support
+                historical analysis.
+            </p>
+
+            <p>
+                Across these enhancements, I strengthened my ability
+                to troubleshoot, document architectural choices,
+                validate inputs, interpret experimental results,
+                and communicate technical outcomes. My next goals
+                are to expand autmated tests, improve deployment
+                security, and continue developing dependable
+                software for real-world applications.
+            </p>
+            
+        </section>
+
+
+        <!-- ARTIFACTS -->
+
+        <section id="artifacts">
+
+            <h2>Artifacts and Supporting Evidence</h2>
+
+            <p>
+                "TO DO" Place holder for artifacts, coder review, etc.
+            </p>
+
+            <ul>
+
+                <li>
+                    <strong>Code Review:</strong>
+                    "TODO" overview of the original artifacts and
+                    the proposed improvements.
+                </li>
+
+                <li>
+                    <strong>Enhancement One:</strong>
+                    "TODO" thermostat source files, architecture narrative,
+                    and physical hardware demonstration, etc.
+                </li>
+
+                <li>
+                    <strong>Enhancement Two:</strong>
+                    "TODO" A* implementation, enhanced notebook,
+                    comparison results, algorithm narrative, etc.
+                </li>
+
+
+                <li>
+                    <strong>Enhancement Three:</strong>
+                    "TODO" Flask, MongoDB source files, sample API responses,
+                    database narrative, and system demonstration, etc.
+                </li>
+            </ul>
+            
+        </section>
+        
     </main>
 
-    <hr>
+
+    <!-- FOOTER -->
 
     <footer>
-        <p>&copy; 2026 Derek Lopez</p>
+        <div class="wrap">
+            &copy; 2026 Derek Lopez &middot; Computer Science ePortfolio
+        </div>
     </footer>
-
 </body>
-
 </html>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+        
