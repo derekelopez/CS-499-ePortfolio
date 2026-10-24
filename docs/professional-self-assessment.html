@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Professional Self-Assessment | CS-499 ePortfolio
+  </title>
+  <meta content="CS-499 capstone professional self-assessment across five computer science outcomes." name="description"/>
+  <style>
+   :root {
+    color-scheme:light
+}
+
+* {
+    box-sizing:border-box
+}
+
+body {
+    margin:0;
+    background:#f3f6fa;
+    color:#1b293a;
+    font:16px/1.78 system-ui,-apple-system,Segoe UI,Arial,sans-serif
+}
+
+header {
+    background:#112a45;
+    color:#fff;
+    padding:44px max(24px,calc((100vw - 960px)/2)) 32px
+}
+
+header h1 {
+    margin:0 0 6px;
+    font-size:clamp(1.8rem,4vw,2.65rem);
+    letter-spacing:-.03em
+}
+
+header p {
+    margin:4px 0;
+    color:#cfdeec
+}
+
+a {
+    color:#165b92
+}
+
+header a {
+    color:#eaf3ff
+}
+
+main {
+    max-width:960px;
+    margin:30px auto 70px;
+    padding:0 20px
+}
+
+nav {
+    background:white;
+    border:1px solid #dbe3ed;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:24px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 20px
+}
+
+article {
+    background:#fff;
+    border:1px solid #dae3ee;
+    border-radius:14px;
+    padding:clamp(24px,5vw,52px);
+    box-shadow:0 8px 24px #1c3b5310
+}
+
+section+section {
+    border-top:1px solid #dbe3ec;
+    margin-top:30px;
+    padding-top:18px
+}
+
+h2 {
+    font-size:1.28rem;
+    line-height:1.35;
+    color:#173e60;
+    margin:10px 0 16px
+}
+
+p {
+    margin:0 0 15px
+}
+
+.actions {
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-top:20px
+}
+
+footer {
+    text-align:center;
+    color:#5c6f81;
+    font-size:.87rem;
+    padding:18px
+}
+
+@media print {
+    header {
+        background:white;
+        color:black;
+        padding:0
+    }
+
+    header p,header a {
+        color:black
+    }
+
+    body {
+        background:white
+    }
+
+    nav,.actions {
+        display:none
+    }
+
+    main {
+        margin:0;
+        max-width:none
+    }
+
+    article {
+        border:0;
+        box-shadow:none;
+        padding:0
+    }
+
+    section {
+        break-inside:avoid
+    }
+
+}
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Professional Self-Assessment
+   </h1>
+   <p>
+    CS-499 Computer Science Capstone &middot; Southern New Hampshire University
+   </p>
+   <p>
+    Derek Lopez &middot; October 2026
+   </p>
+   <p>
+    <a href="index.html">
+     &larr; Return to ePortfolio
+    </a>
+   </p>
+  </header>
+  <main>
+   <nav aria-label="Assessment sections">
+    <a href="#s1">
+     Professional Introduction
+    </a>
+    <a href="#s2">
+     Outcome One
+    </a>
+    <a href="#s3">
+     Outcome Two
+    </a>
+    <a href="#s4">
+     Outcome Three
+    </a>
+    <a href="#s5">
+     Outcome Four
+    </a>
+    <a href="#s6">
+     Outcome Five
+    </a>
+    <a href="#s7">
+     Professional Growth and Future Direction
+    </a>
+   </nav>
+   <article>
+    <section id="s1">
+     <h2>
+      Professional Introduction
+     </h2>
+     <p>
+      I am completing my Bachelor of Science in Computer Science with a concentration in Software Engineering at Southern New Hampshire University. My academic work, together with my professional experience in ergonomics and process improvement, has helped me approach software development as a disciplined process of identifying needs, evaluating alternatives, testing results, and communicating decisions. I am especially interested in software architecture, embedded systems, algorithms, backend development, databases, and secure programming.
+     </p>
+     <p>
+      My CS-499 capstone portfolio demonstrates that progression through three enhancements of two earlier course artifacts. I refactored a Raspberry Pi Smart Thermostat for improved software design and engineering; improved a Pirate Intelligent Agent and compared A* pathfinding with a deep Q-network (DQN); and extended the thermostat with a Flask API and MongoDB-based telemetry storage. Together, these artifacts show my ability to move beyond initial functionality toward maintainability, measurable performance, system integration, and responsible assessment of limitations.
+     </p>
+    </section>
+    <section id="s2">
+     <h2>
+      Outcome One &mdash; Collaboration and Organizational Decision-Making
+     </h2>
+     <p>
+      Effective collaboration in computer science depends on making code and design choices understandable to people who may have different technical responsibilities. During the Module Two code review, I evaluated my original Smart Thermostat and Pirate Intelligent Agent implementations, identified areas for improvement, and communicated an enhancement plan through a recorded technical presentation. The review gave me practice explaining what existing code does, why a change is warranted, and how the change can be evaluated.
+     </p>
+     <p>
+      In the thermostat enhancement, I separated configuration, core thermostat behavior, physical hardware operations, and application orchestration into distinct modules. This organization allows another developer or reviewer to focus on one responsibility without first understanding an entire monolithic script. For the intelligent agent, I documented corrected movement and reward handling and compared algorithm outcomes using the same maze and starting positions. Those results provide evidence to support a design decision instead of relying on preference alone.
+     </p>
+     <p>
+      These were individual capstone projects, not a claim that I worked on a formal development team. Nevertheless, I applied collaborative practices that would support a team: meaningful file organization, contextual documentation, reproducible comparisons, Git version control, and explicit acknowledgment of design trade-offs. I learned that a productive code review should be specific, respectful, actionable, and based on shared goals.
+     </p>
+    </section>
+    <section id="s3">
+     <h2>
+      Outcome Two &mdash; Professional Oral, Written, and Visual Communication
+     </h2>
+     <p>
+      I communicated the capstone work through a code review video, three written enhancement narratives, source-code documentation, testing summaries, and a public GitHub Pages portfolio. These formats serve different audiences. Source files and algorithm details support technical reviewers; project overviews and architecture explanations help stakeholders understand why the work matters; and the public portfolio provides employers with direct access to the evidence behind my stated skills.
+     </p>
+     <p>
+      For example, the intelligent-agent narrative explains A* in terms of its priority queue, path-cost tracking, Manhattan-distance heuristic, and computational trade-offs. It also presents results clearly: A* solved 50 of 50 evaluated starting positions, whereas the DQN solved 1 of 50 in the recorded training and evaluation configuration. I explicitly avoid generalizing those findings to every reinforcement-learning problem. Similarly, the thermostat telemetry documentation traces the flow of readings from the Raspberry Pi through the Flask API into MongoDB.
+     </p>
+     <p>
+      The process reinforced the importance of consistent naming, precise technical language, accessible navigation, and matching claims to evidence. An effective technical portfolio should allow a reader to locate original and enhanced artifacts, understand the changes, and inspect supporting results without unnecessary obstacles.
+     </p>
+    </section>
+    <section id="s4">
+     <h2>
+      Outcome Three &mdash; Algorithmic Design, Evaluation, and Trade-Offs
+     </h2>
+     <p>
+      The Pirate Intelligent Agent provides my strongest evidence of algorithmic evaluation. The original project used deep Q-learning to navigate a treasure maze. I improved maze constructor validation, handling of invalid actions, and reward-ordering behavior, then implemented A* search as an alternative with an explicit heuristic. The A* implementation uses a priority queue, cost tracking, parent relationships, and Manhattan distance to guide search and reconstruct a path.
+     </p>
+     <p>
+      In a recorded evaluation using an 8-by-8 maze and 50 valid starting positions, A* found paths from all 50 starts, with a mean successful path length of 15.64 moves. The DQN succeeded from one start (2%) after the recorded training run of up to 1,000 epochs. Its single successful route required one move, so that average is not meaningful as a cross-algorithm efficiency comparison. The evidence supports choosing A* for this known, deterministic maze under the tested conditions, while recognizing that DQN has different strengths and that additional training or tuning could change its results.
+     </p>
+     <p>
+      This work emphasized that algorithm selection depends on assumptions and constraints. A* requires accessible state and movement information and uses memory for its frontier and path records, while DQN incurs training cost and has performance sensitive to reward design and learning configuration. I also considered complexity, including graph-search costs and the memory required to maintain candidate states. In the thermostat, I used a clear OFF/HEAT/COOL state model and bounded setpoint logic to solve a different type of deterministic control problem.
+     </p>
+    </section>
+    <section id="s5">
+     <h2>
+      Outcome Four &mdash; Computing Techniques, Tools, and Practical Value
+     </h2>
+     <p>
+      I used iterative development and testing across embedded software, algorithm research, and backend services. The thermostat runs on Raspberry Pi hardware with buttons, LEDs, an LCD, and temperature/humidity readings. I refactored the application into modules and then verified that the display, three operating states, setpoint controls, heating and cooling indicators, and clean shutdown continued to operate. Separating the core from hardware access also supports more focused unit testing.
+     </p>
+     <p>
+      For the database enhancement, I implemented a Python telemetry client, Flask REST endpoints, a validation layer, and MongoDB persistence on a Windows host. I verified that the Raspberry Pi could send readings, the API could process them, and records appeared in MongoDB. The system also supports querying stored telemetry for analysis. For the intelligent agent, I used Python, Jupyter, TensorFlow, and heap-based search to implement and measure competing approaches.
+     </p>
+     <p>
+      These enhancements reflect stages of the software development life cycle: assessing the original artifact, planning changes, implementing incrementally, testing behavior, interpreting results, and documenting what remains. They deliver practical value by improving maintainability, supporting evidence-based algorithm selection, and creating a record of embedded-device behavior. The projects remain educational prototypes; I would plan additional reliability, deployment, and operational testing before treating them as production systems.
+     </p>
+    </section>
+    <section id="s6">
+     <h2>
+      Outcome Five &mdash; Security Mindset and Responsible Design
+     </h2>
+     <p>
+      The capstone work strengthened my understanding that security begins with requirements and architectural decisions, not merely with a final scan. In the thermostat, setpoint constraints and separation of responsibilities reduce opportunities for invalid input or unintended changes to affect control logic. In the Pirate Intelligent Agent, validating maze dimensions and cell values and handling invalid states helps prevent malformed input from producing unpredictable behavior.
+     </p>
+     <p>
+      The telemetry enhancement introduces a network boundary and persistent data, which require additional care. I separated request validation from Flask routing and database operations, and I reviewed source files for obvious credential patterns before publishing the repository. However, input validation alone does not make an API production-secure. Authentication, authorization, encrypted transport, database access restrictions, stronger error handling, and deployment hardening require further verification or implementation before exposing the service outside a trusted development environment.
+     </p>
+     <p>
+      I also considered how future changes could affect assumptions: new thermostat fields would require corresponding validation and database handling; additional maze rules would affect pathfinding; and changes to API behavior would require new tests. The main lesson is to document trust boundaries, validate data explicitly, limit unintended access, and state which security measures have been implemented versus those that remain future work.
+     </p>
+    </section>
+    <section id="s7">
+     <h2>
+      Professional Growth and Future Direction
+     </h2>
+     <p>
+      These capstone enhancements changed how I judge software quality. A successful demonstration is only a starting point. I now place greater emphasis on whether code can be explained, maintained, tested, evaluated, and safely extended. My professional background has taught me to look for root causes and communicate improvements in a way that supports decisions; the capstone allowed me to apply that perspective to software design.
+     </p>
+     <p>
+      Going forward, I intend to deepen automated testing, strengthen API authentication and transport security, improve deployment documentation, and expand my work in software engineering and connected systems. This portfolio represents verified progress toward those goals: refactored embedded software, an evidence-based algorithm comparison, and an end-to-end telemetry application. It is also a record of how I approach new technical challenges&mdash;with analysis, iteration, measurement, and clear communication.
+     </p>
+    </section>
+    <div class="actions">
+     <a href="index.html">
+      Return to portfolio
+     </a>
+     <a href="https://github.com/derekelopez/CS-499-ePortfolio/tree/main/Professional-Self-Assessment">
+      Assessment files on GitHub
+     </a>
+    </div>
+   </article>
+  </main>
+  <footer>
+   &copy; 2026 Derek Lopez &middot; CS-499 ePortfolio
+  </footer>
+ </body>
+</html>
+
